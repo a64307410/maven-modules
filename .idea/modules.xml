@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Mapper-master/mapper.iml" filepath="$PROJECT_DIR$/Mapper-master/mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-modules.iml" filepath="$PROJECT_DIR$/maven-modules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dexcoder-assistants/spring-jdbc-assistants.iml" filepath="$PROJECT_DIR$/dexcoder-assistants/spring-jdbc-assistants.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-test/tset-mybatis-test.iml" filepath="$PROJECT_DIR$/mybatis-test/tset-mybatis-test.iml" />
+    </modules>
+  </component>
+</project>
