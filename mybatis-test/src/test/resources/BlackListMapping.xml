@@ -3,7 +3,7 @@
 
 <mapper namespace="me.gacl.mapping.userMapper">
 
-    <select id="getBlackList" parameterType="int" resultType="com.user.entity.BlackList">
+    <select id="getBlackList" parameterType="int" resultType="com.user.com.lehman.commons.entity.BlackList">
          select * from tbBlackList
     </select>
 

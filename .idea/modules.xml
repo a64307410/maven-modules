@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/commons/commons.iml" filepath="$PROJECT_DIR$/commons/commons.iml" />
       <module fileurl="file://$PROJECT_DIR$/Mapper-master/mapper.iml" filepath="$PROJECT_DIR$/Mapper-master/mapper.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-modules.iml" filepath="$PROJECT_DIR$/maven-modules.iml" />
       <module fileurl="file://$PROJECT_DIR$/dexcoder-assistants/spring-jdbc-assistants.iml" filepath="$PROJECT_DIR$/dexcoder-assistants/spring-jdbc-assistants.iml" />

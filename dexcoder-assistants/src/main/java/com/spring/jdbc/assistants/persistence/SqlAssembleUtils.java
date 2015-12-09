@@ -235,10 +235,6 @@ public class SqlAssembleUtils {
                 continue;
             }
 
-            if (value instanceof String && StringUtils.isBlank(value.toString())) {
-                continue;
-            }
-
             autoField = new AutoField();
             autoField.setName(fieldName);
             autoField.setSqlOperator("and");

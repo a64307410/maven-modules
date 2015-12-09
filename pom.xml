@@ -10,6 +10,7 @@
         <module>dexcoder-assistants</module>
         <module>mybatis-test</module>
         <module>Mapper-master</module>
+        <module>commons</module>
     </modules>
 
 
