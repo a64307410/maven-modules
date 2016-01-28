@@ -8,9 +8,86 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>commons</artifactId>
     <packaging>jar</packaging>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <!--<jar.scope>provided</jar.scope>-->
+        <jar.scope>compile</jar.scope>
+        <spring.version>4.2.0.RELEASE</spring.version>
+        <slf4j-log4j12.version>1.6.6</slf4j-log4j12.version>
+        <commons-lang.version>2.5</commons-lang.version>
+        <commons-collections.version>3.2.1</commons-collections.version>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <commons.dbcp.version>1.4</commons.dbcp.version>
+        <mysql.version>5.1.25</mysql.version>
+        <aspectj.version>1.7.2</aspectj.version>
+
+        <jmock.version>2.5.1</jmock.version>
+        <junit.version>4.7</junit.version>
+
+        <commons-io.version>2.2</commons-io.version>
+        <commons-codec.version>1.6</commons-codec.version>
+        <commons-fileupload.version>1.3</commons-fileupload.version>
+
+    </properties>
 
 
     <dependencies>
+        <!-- spring begin -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-commons</artifactId>
+            <version>1.6.2.RELEASE</version>
+            <scope>${jar.scope}</scope>
+        </dependency>
+        <!-- spring end -->
+
+
 
 
         <dependency>
@@ -21,7 +98,17 @@
         <dependency>
             <groupId>com.lehman.common.utils</groupId>
             <artifactId>spring-jdbc-assistants</artifactId>
-            <version>1.0.8</version>
+            <version>(1.0,)</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>javaee</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>5</version>
         </dependency>
 
     </dependencies>

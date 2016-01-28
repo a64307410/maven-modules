@@ -12,6 +12,9 @@
     1. jdbcDao insert,update,delete 语句 字段名.加上 `` 括起来,防止保留字,字段名出错
 
 1.0.9 : 2015-12-9 17:18:26
-    1. getEntityAutoField 方法去除,排除空字符串.   空字符串也会被加入.
+    1. getEntityAutoField 方法去除,排除空字符串.   空字符串也会被加入.段名出错
+
+1.0.10 : 2016-01-25 16:48:44
+    1. DefaultNameHandler.getPKName  缓存实体映射的主键名;
 
 

@@ -1,6 +1,6 @@
 package com.lehman.commons.utils;
 
-import net.eoutech.webmin.commons.utils.DateUtils;
+
 import org.apache.log4j.Logger;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -28,6 +28,7 @@ import java.util.*;
  * @update:2014年7月25日 上午10:13:05
  */
 public class ActionUtils {
+
 
     /**
      * @param millis 毫秒数 throws
@@ -119,9 +120,16 @@ public class ActionUtils {
      * @time 2014年8月13日 上午11:06:12
      * @Description: 文件上传方法
      * 使用spring-mvc的上传类从request中获得List<MultipartFile>上传的文件集.
-     * (ps:速度比流方式快很多倍 , 一个4M的文件 流的方式的运行时间：14712ms
-     * multipartFile方法的运行时间：4ms)1可以用multipartFile.transferTo(new
-     * File("D:test.txt")),拷贝文件. 2 getBytes得到 数据.等等...方法..
+     * (ps:速度比流方式快很多倍 , 一个4M的文件 流的方式的运行时间：14712ms multipartFile方法的运行时间：4ms)
+     * 1.  拷贝文件:
+     *     for (MultipartFile multipartFile : ActionUtils.getUploadFiles(request)) {
+     *         multipartFile.transferTo(new File("D:/" + multipartFile.getOriginalFilename()));
+     *     }
+     * 2. getBytes得到 数据.等等...方法..
+     *
+     * 进度条:
+     * 1. 使用html5做进度条,
+     * 2. 重写CommonsMultipartResolver 获得进度信息,前端轮询取得信息...
      */
     public static List< MultipartFile > getUploadFiles( HttpServletRequest request ) {
         // 将当前上下文初始化给 CommonsMutipartResolver （多部分解析器）
@@ -297,5 +305,4 @@ public class ActionUtils {
         }
         return params;
     }
-
 }

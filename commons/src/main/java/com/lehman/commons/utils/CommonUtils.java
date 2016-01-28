@@ -1,6 +1,5 @@
 package com.lehman.commons.utils;
 
-import com.frame.commons.constant.FrameConst;
 import org.springframework.web.servlet.support.RequestContextUtils;
 
 import javax.servlet.http.HttpServletRequest;
@@ -12,7 +11,7 @@ import java.util.ResourceBundle;
  * Created by Administrator on 2015/8/19.
  */
 public class CommonUtils {
-
+    private static final String LANGUAGE_RESOURCE_SESSION_KEY = "language_resource";
     private static ResourceBundle appCfg = null;
 
 
@@ -47,11 +46,11 @@ public class CommonUtils {
     public static ResourceBundle getLangRes() {
         HttpServletRequest request = ActionUtils.getRequest();
         HttpSession session = request.getSession();
-        ResourceBundle lang = ( ResourceBundle ) session.getAttribute( FrameConst.LANGUAGE_RESOURCE_SESSION_KEY );
+        ResourceBundle lang = ( ResourceBundle ) session.getAttribute( LANGUAGE_RESOURCE_SESSION_KEY );
         if ( lang == null ) {
             Locale locale = RequestContextUtils.getLocaleResolver( request ).resolveLocale( request );
             lang = ResourceBundle.getBundle( "messages", locale );
-            session.setAttribute( FrameConst.LANGUAGE_RESOURCE_SESSION_KEY, lang );
+            session.setAttribute( LANGUAGE_RESOURCE_SESSION_KEY, lang );
         }
         return lang;
     }

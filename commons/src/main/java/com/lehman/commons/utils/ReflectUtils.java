@@ -1,6 +1,5 @@
 package com.lehman.commons.utils;
 
-import net.eoutech.webmin.commons.entity.TbUser;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -203,13 +202,6 @@ public class ReflectUtils {
                         //         clazz.equals( DateTime.class ) ||
                         clazz.isPrimitive()
         );
-    }
-
-
-    public static void main(String[] args) {
-        TbUser tbUser = new TbUser();
-        setUnkTypeProp(tbUser, "roamTimeZone", "1");
-        JsonUtils.toStringPrint(tbUser);
     }
 
 
