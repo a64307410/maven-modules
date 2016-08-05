@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<!-- maven mybatis generator 插件配置 -->
+<generatorConfiguration>
+
+    <!-- *********需要改一下，到自己的jar路径*********-->
+    <classPathEntry location="D:\develop\mysql\mysql-connector-java-5.1.6-bin.jar"/>
+
+
+
+
+    <context id="MySqlTables" targetRuntime="MyBatis3">
+
+        <commentGenerator>
+            <property name="suppressAllComments" value="true" />
+        </commentGenerator>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://192.168.1.201:3306/job" userId="dev"
+                        password="dev">
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <!-- model的配置 -->
+        <javaModelGenerator targetPackage="com.domain"
+                            targetProject="D:\data\dao">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!--mapper xml的配置 -->
+        <sqlMapGenerator targetPackage="com.dao"
+                         targetProject="D:\data\dao">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!-- mapper java的配置   ANNOTATEDMAPPER,MIXEDMAPPER,XMLMAPPER-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.dao"
+                             targetProject="D:\data\dao">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+
+        <!-- 		<table tableName="t_collection" domainObjectName="Collect">		</table> -->
+        <!-- 		<table tableName="t_job" domainObjectName="Job">		</table> -->
+        <!-- 		<table tableName="t_mobile_sesion" domainObjectName="MobileSession">		</table> -->
+
+        <!-- 		<table tableName="t_verification" domainObjectName="Verification">		</table> -->
+        <!-- 		<table tableName="t_inform" domainObjectName="Inform">		</table> -->
+        <!-- 			<table tableName="t_job_category" domainObjectName="JobCategory">	</table>   -->
+        <!-- 		<table tableName="t_qualification" domainObjectName="Qualification">	</table> -->
+        <!-- 		<table tableName="t_message" domainObjectName="Message">	</table> -->
+        <!-- 	<table tableName="t_entering_job" domainObjectName="EnteringJob">	</table> -->
+        <!-- <table tableName="t_job_fair_apply" domainObjectName="JobFairApply">	</table> -->
+        <!-- <table tableName="t_resume" domainObjectName="Resume">	</table> -->
+        <!-- 	<table tableName="t_connect_guest" domainObjectName="ConnectGuest">	</table> -->
+        <!-- 	<table tableName="t_bbs_top" domainObjectName="BBSTop">	</table> -->
+        <!-- 		<table tableName="t_jobfair_info" domainObjectName="Jobfair">		</table> -->
+        <!-- 		<table tableName="t_user_log" domainObjectName="UserLog">		</table> -->
+        <!-- 		<table tableName="t_bbs_follow" domainObjectName="BbsFollow">		</table> -->
+        <!-- 		<table tableName="t_bbs_indexhot" domainObjectName="BbsIndexHot">		</table> -->
+        <!--<table tableName="t_bbs_post" domainObjectName="BbsPost">		</table>-->
+        <!-- 		<table tableName="t_bbs_post_comment" domainObjectName="BbsComment">		</table> -->
+        <!-- 		<table tableName="t_bbs_post_essence" domainObjectName="BbsPostEssence">		</table> -->
+        <!-- 		<table tableName="t_bbs_section" domainObjectName="Bbssection">		</table> -->
+        <!-- 		<table tableName="t_user_setting" domainObjectName="UserSetting">		</table> -->
+        <!-- <table tableName="t_resume_deal" domainObjectName="ResumeDeal">		</table> -->
+        <!-- <table tableName="t_access_log" domainObjectName="AccessLog">		</table> -->
+        <!-- <table tableName="t_resume_apply_record" domainObjectName="ResumeApplyRecord">		</table> -->
+        <!-- <table tableName="t_company_account" domainObjectName="CompanyAccount"></table> -->
+        <!-- <table tableName="t_qualification" domainObjectName="Qualification"></table> -->
+        <!-- <table tableName="t_job_v2" domainObjectName="JobV2"></table> -->
+        <!-- <table tableName="t_inform" domainObjectName="Inform"></table> -->
+        <!--<table tableName="t_friend_link" domainObjectName="FriendLink"/>-->
+        <!--<table tableName="t_user_action" domainObjectName="UserAction"/>-->
+        <!--<table tableName="t_pay_validate" domainObjectName="PayValidate"/>-->
+        <!--<table tableName="t_console_config" domainObjectName="ConsoleConfig"/>-->
+        <!--<table tableName="t_pay_recover_top_up" domainObjectName="PayRecoverTopUp"/>-->
+
+        <!--<table tableName="t_bbs_post_comment_virtual_seo" domainObjectName="BbsPostCommentVirtualSeo"/>-->
+        <!--<table tableName="t_bbs_post_attr" domainObjectName="PostAttr"/>-->
+        <!--<table tableName="t_bbs_autocomment" domainObjectName="BbsAutocomment"/>-->
+
+
+
+        <!--<table tableName="t_console_config" domainObjectName="ConsoleConfig"/>-->
+        <!--<table tableName="t_deal_gift_record" domainObjectName="DealGiftRecord"/>-->
+
+        <!--<table tableName="t_draw_log" domainObjectName="DrawLog"/>-->
+        <!--<table tableName="t_device_log" domainObjectName="DeviceLog"/>-->
+        <!-- *****************用户区域************************-->
+
+
+        <!--<table tableName="t_user" domainObjectName="User">		</table>-->
+        <!--<table tableName="t_user_cost_level_log" domainObjectName="UserCostLevelLog">		</table>-->
+        <!--<table tableName="t_user_setting" domainObjectName="UserSetting">		</table>-->
+        <!--<table tableName="t_user_relation" domainObjectName="UserRelation">		</table>-->
+        <!--<table tableName="t_user_relation" domainObjectName="UserRelation">		</table>-->
+        <table tableName="t_user_dynamic" domainObjectName="UserDynamic">
+        </table>
+
+
+        <!-- *****************H5游戏区域************************-->
+
+
+        <!--<table tableName="t_game_platform_attr" domainObjectName="GamePlatformAttr"/>-->
+        <!--<table tableName="t_game_football_record" domainObjectName="GameFootballRecord"/>-->
+        <!--<table tableName="t_game_attr" domainObjectName="GameAttr"/>-->
+        <!--<table tableName="t_game_guess_topic" domainObjectName="GameGuessTopic"/>-->
+        <!--<table tableName="t_game_guess_answer" domainObjectName="GameGuessAnswer"/>-->
+
+
+
+
+
+    </context>
+</generatorConfiguration> 

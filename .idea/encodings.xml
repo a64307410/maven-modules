@@ -4,6 +4,13 @@
     <file url="file://$PROJECT_DIR$/Mapper-master" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commons" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dexcoder-assistants" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/generator-mybatis-generator-1.3.2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/generator-mybatis-generator-1.3.2/mybatis-generator-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/generator-mybatis-generator-1.3.2/mybatis-generator-maven-plugin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/generator-mybatis-generator-1.3.2/mybatis-generator-systests-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/generator-mybatis-generator-1.3.2/mybatis-generator-systests-ibatis2-java2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/generator-mybatis-generator-1.3.2/mybatis-generator-systests-ibatis2-java5" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/generator-mybatis-generator-1.3.2/mybatis-generator-systests-mybatis3" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

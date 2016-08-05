@@ -7,7 +7,16 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/generator-mybatis-generator-1.3.2/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/generator-mybatis-generator-1.3.2/mybatis-generator-systests-common/pom.xml" />
+        <option value="$PROJECT_DIR$/generator-mybatis-generator-1.3.2/mybatis-generator-systests-ibatis2-java2/pom.xml" />
+        <option value="$PROJECT_DIR$/generator-mybatis-generator-1.3.2/mybatis-generator-systests-ibatis2-java5/pom.xml" />
+        <option value="$PROJECT_DIR$/generator-mybatis-generator-1.3.2/mybatis-generator-systests-mybatis3/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">

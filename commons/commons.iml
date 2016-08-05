@@ -28,6 +28,8 @@
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:1.6.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:jcl-over-slf4j:1.7.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet.jsp:jsp-api:2.1" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.6" level="project" />
     <orderEntry type="module" module-name="spring-jdbc-assistants" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.7.2" level="project" />
@@ -39,6 +41,7 @@
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.6" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.3.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.3" level="project" />
+    <orderEntry type="library" name="Maven: commons-httpclient:commons-httpclient:3.1" level="project" />
     <orderEntry type="library" name="Maven: javaee:javaee-api:5" level="project" />
   </component>
 </module>

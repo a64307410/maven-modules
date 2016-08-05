@@ -22,22 +22,25 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="commons" />
         <module name="mapper" />
+        <module name="mybatis-generator-core" />
+        <module name="mybatis-generator-maven-plugin" />
         <module name="spring-jdbc-assistants" />
         <module name="tset-mybatis-test" />
-      </profile>
-      <profile default="false" name="Annotation profile for commons" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="commons" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="commons" target="1.7" />
       <module name="mapper" target="1.5" />
       <module name="maven-modules" target="1.5" />
+      <module name="mybatis-generator" target="1.5" />
+      <module name="mybatis-generator-core" target="1.5" />
+      <module name="mybatis-generator-maven-plugin" target="1.5" />
+      <module name="mybatis-generator-systests-common" target="1.5" />
+      <module name="mybatis-generator-systests-ibatis2-java2" target="1.4" />
+      <module name="mybatis-generator-systests-ibatis2-java5" target="1.5" />
+      <module name="mybatis-generator-systests-mybatis3" target="1.5" />
       <module name="spring-jdbc-assistants" target="1.5" />
       <module name="tset-mybatis-test" target="1.5" />
     </bytecodeTargetLevel>

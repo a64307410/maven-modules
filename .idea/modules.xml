@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/commons/commons.iml" filepath="$PROJECT_DIR$/commons/commons.iml" />
       <module fileurl="file://$PROJECT_DIR$/Mapper-master/mapper.iml" filepath="$PROJECT_DIR$/Mapper-master/mapper.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-modules.iml" filepath="$PROJECT_DIR$/maven-modules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generator-mybatis-generator-1.3.2/mybatis-generator.iml" filepath="$PROJECT_DIR$/generator-mybatis-generator-1.3.2/mybatis-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generator-mybatis-generator-1.3.2/mybatis-generator-core/mybatis-generator-core.iml" filepath="$PROJECT_DIR$/generator-mybatis-generator-1.3.2/mybatis-generator-core/mybatis-generator-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generator-mybatis-generator-1.3.2/mybatis-generator-maven-plugin/mybatis-generator-maven-plugin.iml" filepath="$PROJECT_DIR$/generator-mybatis-generator-1.3.2/mybatis-generator-maven-plugin/mybatis-generator-maven-plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/dexcoder-assistants/spring-jdbc-assistants.iml" filepath="$PROJECT_DIR$/dexcoder-assistants/spring-jdbc-assistants.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis-test/tset-mybatis-test.iml" filepath="$PROJECT_DIR$/mybatis-test/tset-mybatis-test.iml" />
     </modules>
